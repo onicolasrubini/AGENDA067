@@ -1,10 +1,9 @@
-import './App.css';
-
 function App() {
   return (
-    <main>
-      <h1>Agenda Cultural de Campo Grande</h1>
-      <p>Projeto em desenvolvimento.</p>
+    <main className="min-h-screen bg-slate-100 p-8">
+      <h1 className="text-3xl font-bold text-blue-900">
+        Agenda Cultural de Campo Grande
+      </h1>
     </main>
   );
 }
