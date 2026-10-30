@@ -2,28 +2,85 @@
 const events = [
   {
     id: 1,
-    name: "titulo event",
+    name: "FELIPE E RODRIGO + JAPA NK - EXPO GENÉTICA",
     category: "Musica",
-    date: "24 OUT",
-    location: "Orla Morena",
-    image:"",
+    date: "06 NOV",
+    location: "Parque Laucídio Coelho",
+    image:"/img/japa nk event.jpg",
   },
   {
     id: 2,
-    name: "titulo event",
-    category: "Festa",
-    date: "26 OUT",
-    location: "Afonso Pena",
-    image:"",
+    name: "THIAGUINHO - EXPOGRANDE 2026",
+    category: "Música",
+    date: "28 ABR",
+    location: "R. Américo Carlos da Costa, 320",
+    image:"/img/thiaguinho.jpg",
   },
   {
     id: 3,
-    name: "titulo event",
-    category: "Festa",
+    name: "GUSTAVO LIMA - EXPOGRANDE 2026",
+    category: "Música",
     date: "01 NOV",
     location: "Feira Central",
-    image:"",
+    image:"/img/gustavo.jpg",
   },
+  {
+    id: 3,
+    name: "FESTIVAL DE SOBÁ - FEIRA CENTRAL",
+    category: "Gastronomia",
+    date: "01 NOV",
+    location: "Feira Central",
+    image:"/img/festival-soba.jpg",
+  },
+{
+    id: 3,
+    name: "GUSTAVO LIMA - EXPOGRANDE 2026",
+    category: "Música",
+    date: "01 NOV",
+    location: "Feira Central",
+    image:"/img/gustavo.jpg",
+  },
+  {
+    id: 3,
+    name: "GUSTAVO LIMA - EXPOGRANDE 2026",
+    category: "Música",
+    date: "01 NOV",
+    location: "Feira Central",
+    image:"/img/gustavo.jpg",
+  },
+  {
+    id: 3,
+    name: "GUSTAVO LIMA - EXPOGRANDE 2026",
+    category: "Música",
+    date: "01 NOV",
+    location: "Feira Central",
+    image:"/img/gustavo.jpg",
+  },
+  {
+    id: 3,
+    name: "GUSTAVO LIMA - EXPOGRANDE 2026",
+    category: "Música",
+    date: "01 NOV",
+    location: "Feira Central",
+    image:"/img/gustavo.jpg",
+  },
+  {
+    id: 3,
+    name: "GUSTAVO LIMA - EXPOGRANDE 2026",
+    category: "Música",
+    date: "01 NOV",
+    location: "Feira Central",
+    image:"/img/gustavo.jpg",
+  },
+
+
+
+
+
+
+
+
+
 ];
 
 function App() {
@@ -130,9 +187,15 @@ function App() {
                     {event.category}
                   </span>
 
+                  
                   <h3 className="mt-2 text-xl font-bold">{event.name}</h3>
 
                   <p className="mt-3 text-sm text-slate-500">
+                    <img
+                      src="/img/icon.loc.png"
+                      alt="ícone de localização"
+                      className="inline-block h-4 w-4 mr-1"
+                    />
                     {event.location}, Campo Grande - MS
                   </p>
 
