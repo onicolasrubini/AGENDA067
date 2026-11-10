@@ -1,6 +1,7 @@
 
 import { Link } from "react-router-dom";
 import PopularEvents from "../components/PopularEvents";
+import EventCarousel from "../components/EventCarousel";
 
 function Home() {
   return (
@@ -73,7 +74,7 @@ function Home() {
           </div>
         </section>
 
-        <PopularEvents />
+        <EventCarousel />
 
         <section id="sobre" className="bg-slate-50">
           <div className="mx-auto max-w-7xl px-6 py-16 md:py-20">
