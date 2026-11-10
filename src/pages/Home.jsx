@@ -1,39 +1,14 @@
 
 import { Link } from "react-router-dom";
-
-const events = [
-  {
-    id: 1,
-    name: "titulo event",
-    category: "Musica",
-    date: "24 OUT",
-    location: "Orla Morena",
-    image: "",
-  },
-  {
-    id: 2,
-    name: "titulo event",
-    category: "Festa",
-    date: "26 OUT",
-    location: "Afonso Pena",
-    image: "",
-  },
-  {
-    id: 3,
-    name: "titulo event",
-    category: "Festa",
-    date: "01 NOV",
-    location: "Feira Central",
-    image: "",
-  },
-];
+import PopularEvents from "../components/PopularEvents";
 
 function Home() {
   return (
-    <>
     <div className="min-h-screen bg-white text-slate-900">
+
       <header className="border-b border-slate-200 bg-white">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5">
+
           <Link to="/" className="text-2xl font-extrabold tracking-tight">
             AGENDA<span className="text-purple-600">067</span>
           </Link>
@@ -42,9 +17,11 @@ function Home() {
             <a href="#inicio" className="hover:text-purple-600">
               Início
             </a>
+
             <a href="#eventos" className="hover:text-purple-600">
               Eventos
             </a>
+
             <a href="#sobre" className="hover:text-purple-600">
               Sobre o projeto
             </a>
@@ -53,18 +30,21 @@ function Home() {
           <Link
             to="/login"
             className="rounded-full border border-slate-300 px-5 py-2.5 text-sm font-semibold transition hover:border-purple-600 hover:text-purple-600"
-          >Entrar</Link>
-          
+          >
+            Entrar
+          </Link>
+
         </div>
       </header>
 
       <main>
+
         <section
           id="inicio"
           className="relative isolate overflow-hidden bg-slate-950"
         >
           <img
-            src="https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D"
+            src="https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?q=80&w=1170&auto=format&fit=crop"
             alt="Público em evento"
             className="absolute inset-0 -z-20 h-full w-full object-cover opacity-40"
           />
@@ -93,74 +73,11 @@ function Home() {
           </div>
         </section>
 
-        <section id="eventos" className="mx-auto max-w-7xl px-6 py-16 md:py-20">
-          <div className="flex flex-col justify-between gap-4 md:flex-row md:items-end">
-            <div>
-              <h2 className="font-display mt-2 text-3xl font-bold tracking-tight text-violet-600 md:text-4xl">
-                Eventos Populares
-              </h2>
-            </div>
-
-            <a
-              href="#eventos"
-              className="font-semibold text-purple-700 hover:text-purple-900"
-            >
-              Ver todos os eventos →
-            </a>
-          </div>
-
-          <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {events.map((event) => (
-              <article
-                key={event.id}
-                className="group overflow-hidden rounded-2xl border border-slate-200 bg-white transition duration-300 hover:-translate-y-1 hover:shadow-xl"
-              >
-                <div className="relative h-56 overflow-hidden bg-slate-200">
-                  {event.image ? (
-                    <img
-                      src={event.image}
-                      alt={event.name}
-                      className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
-                    />
-                  ) : (
-                    <div className="flex h-full items-center justify-center text-slate-500">
-                      Imagem do evento
-                    </div>
-                  )}
-
-                  <span className="absolute left-4 top-4 rounded-lg bg-white px-3 py-2 text-xs font-bold text-slate-900 shadow">
-                    {event.date}
-                  </span>
-                </div>
-
-                <div className="p-5">
-                  <span className="text-sm font-semibold text-purple-600">
-                    {event.category}
-                  </span>
-
-                  <h3 className="mt-2 text-xl font-bold">{event.name}</h3>
-
-                  <p className="mt-3 text-sm text-slate-500">
-                    {event.location}, Campo Grande - MS
-                  </p>
-
-                  <button
-                    type="button"
-                    className="mt-5 w-full rounded-xl border border-slate-200 py-3 text-sm font-semibold transition hover:border-purple-600 hover:bg-purple-50 hover:text-purple-700"
-                    onClick={() =>
-                      alert("A página de detalhes será implementada na próxima etapa.")
-                    }
-                  >
-                    Ver detalhes
-                  </button>
-                </div>
-              </article>
-            ))}
-          </div>
-        </section>
+        <PopularEvents />
 
         <section id="sobre" className="bg-slate-50">
           <div className="mx-auto max-w-7xl px-6 py-16 md:py-20">
+
             <h2 className="mx-32 mt-3 max-w-2xl text-3xl font-bold md:text-4xl">
               Como funciona.
             </h2>
@@ -170,12 +87,15 @@ function Home() {
               em um só lugar, facilitando a descoberta de novas experiências
               na cidade.
             </p>
+
           </div>
         </section>
+
       </main>
 
       <footer className="bg-slate-700 text-slate-300">
         <div className="mx-auto flex max-w-7xl flex-col gap-3 px-6 py-8 sm:flex-row sm:items-center sm:justify-between">
+
           <p className="text-lg font-bold text-white">
             AGENDA<span className="text-purple-400">067</span>
           </p>
@@ -186,10 +106,11 @@ function Home() {
               Agenda067 Events
             </span>
           </p>
+
         </div>
       </footer>
+
     </div>
-    </>
   );
 }
 
