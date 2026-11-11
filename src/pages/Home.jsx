@@ -45,7 +45,7 @@ function Home() {
           className="relative isolate overflow-hidden bg-slate-950"
         >
           <img
-            src="https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?q=80&w=1170&auto=format&fit=crop"
+            src="https://images.unsplash.com/photo-1506157786151-b8491531f063?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D"
             alt="Público em evento"
             className="absolute inset-0 -z-20 h-full w-full object-cover opacity-40"
           />
@@ -76,7 +76,7 @@ function Home() {
 
         <EventCarousel />
 
-        <section id="sobre" className="bg-slate-50">
+        <section id="sobre" className="bg-slate-300">
           <div className="mx-auto max-w-7xl px-6 py-16 md:py-20">
 
             <h2 className="mx-32 mt-3 max-w-2xl text-3xl font-bold md:text-4xl">
@@ -94,7 +94,7 @@ function Home() {
 
       </main>
 
-      <footer className="bg-slate-700 text-slate-300">
+      <footer className="bg-black text-slate-300">
         <div className="mx-auto flex max-w-7xl flex-col gap-3 px-6 py-8 sm:flex-row sm:items-center sm:justify-between">
 
           <p className="text-lg font-bold text-white">

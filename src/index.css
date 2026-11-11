@@ -1,11 +1,14 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
 @import "tailwindcss";
 
-@theme {
+@theme { 
   --font-sans: "Inter", sans-serif;
   --font-display: "Bebas Neue", sans-serif;
-  --font-graffiti: "Sedgwick Ave Display";
-
+  --font-graffiti: "Sedgwick Ave Display", sans-serif;
 }
 
 body {

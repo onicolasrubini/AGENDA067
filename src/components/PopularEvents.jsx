@@ -10,7 +10,7 @@ function PopularEvents() {
     >
       <div className="flex flex-col justify-between gap-4 md:flex-row md:items-end">
         <div>
-          <h2 className="font-display mt-2 text-3xl font-bold tracking-tight text-violet-600 md:text-4xl">
+          <h2 className="font-graffiti mt-2 text-3xl font-normal tracking-tight text-violet-600 md:text-4xl ">
             Eventos Populares
           </h2>
         </div>
