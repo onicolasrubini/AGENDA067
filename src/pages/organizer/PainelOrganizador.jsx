@@ -66,13 +66,6 @@ function PainelOrganizador() {
           </div>
 
           <div className="flex flex-col gap-3 sm:flex-row">
-            <a
-              href="#meus-eventos"
-              className="rounded-lg border border-slate-300 px-5 py-3 text-center text-sm font-semibold text-slate-700 transition hover:bg-slate-100"
-            >
-              Ver meus eventos
-            </a>
-
             <Link
               to="/painel/organizador/novo-evento"
               className="rounded-lg bg-purple-600 px-5 py-3 text-center text-sm font-semibold text-white transition hover:bg-purple-700"

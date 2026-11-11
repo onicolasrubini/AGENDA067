@@ -29,9 +29,9 @@ function Login() {
         <div className="w-full max-w-md rounded-2xl bg-gray-100 p-8 shadow-xl">
           <Link
             to="/"
-            className="text-sm font-semibold text-purple-600 hover:text-purple-800"
+            className="text-xl font-semibold text-purple-600 hover:text-purple-800"
           >
-            Voltar para a página inicial
+            ⮜
           </Link>
 
           <h1 className="mt-8 text-center text-3xl font-bold text-slate-900">
