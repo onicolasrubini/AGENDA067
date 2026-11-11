@@ -1,10 +1,17 @@
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { obterEventos, salvarEventos } from "../../data/eventos.js";
+import { obterCategorias } from "../../data/categorias.js";
 
 function NovoEvento() {
   const navigate = useNavigate();
+
+  const [categorias, setCategorias] = useState([]);
+
+  useEffect(() => {
+    setCategorias(obterCategorias());
+  }, []);
 
   const [formulario, setFormulario] = useState({
     nome: "",
@@ -149,13 +156,12 @@ function NovoEvento() {
                   required
                 >
                   <option value="">Selecione uma categoria</option>
-                  <option value="Música">Música</option>
-                  <option value="Cultura">Cultura</option>
-                  <option value="Dança">Dança</option>
-                  <option value="Teatro">Teatro</option>
-                  <option value="Gastronomia">Gastronomia</option>
-                  <option value="Esporte">Esporte</option>
-                  <option value="Outros">Outros</option>
+
+                  {categorias.map((categoria) => (
+                    <option key={categoria} value={categoria}>
+                      {categoria}
+                    </option>
+                  ))}
                 </select>
               </div>
             </div>
